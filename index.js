@@ -23,7 +23,9 @@ const appearCircle = (e) => {
 svgElement.addEventListener('mousemove', appearCircle, false);
 svgElement.addEventListener('mouseenter', appearCircle, false);
 svgElement.addEventListener('mouseleave', appearCircle, false);
-svgElement.addEventListener('touchstart', appearCircle, false);
-svgElement.addEventListener('touchend', appearCircle, false);
-svgElement.addEventListener('touchcancel', appearCircle, false);
-svgElement.addEventListener('touchmove', appearCircle, false);
+
+// タッチ対応したいが、offsetX = 0, offsetY = 0 の位置に円が発生し続ける問題がある
+// svgElement.addEventListener('touchstart', appearCircle, false);
+// svgElement.addEventListener('touchend', appearCircle, false);
+// svgElement.addEventListener('touchcancel', appearCircle, false);
+// svgElement.addEventListener('touchmove', appearCircle, false);
