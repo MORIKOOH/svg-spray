@@ -6,7 +6,7 @@ const svgElement = document.createElementNS(SVG_NAMESPACE, 'svg');
 svgElement.classList.add('svg-wrapper');
 targetDiv.appendChild(svgElement);
 
-const appearArrow = (e) => {
+const appearCircle = (e) => {
   const x = e.offsetX;
   const y = e.offsetY;
 
@@ -20,10 +20,10 @@ const appearArrow = (e) => {
   svgElement.appendChild(circleElement);
 }
 
-svgElement.addEventListener('mousemove', appearArrow, false);
-svgElement.addEventListener('mouseenter', appearArrow, false);
-svgElement.addEventListener('mouseleave', appearArrow, false);
-svgElement.addEventListener('touchstart', appearArrow, false);
-svgElement.addEventListener('touchend', appearArrow, false);
-svgElement.addEventListener('touchcancel', appearArrow, false);
-svgElement.addEventListener('touchmove', appearArrow, false);
+svgElement.addEventListener('mousemove', appearCircle, false);
+svgElement.addEventListener('mouseenter', appearCircle, false);
+svgElement.addEventListener('mouseleave', appearCircle, false);
+svgElement.addEventListener('touchstart', appearCircle, false);
+svgElement.addEventListener('touchend', appearCircle, false);
+svgElement.addEventListener('touchcancel', appearCircle, false);
+svgElement.addEventListener('touchmove', appearCircle, false);
