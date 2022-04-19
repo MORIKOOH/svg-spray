@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.target-div-wrapper{
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid white;
+}
+
+.svg-wrapper {
+  width: 100%;
+  height: 100%;
+}
